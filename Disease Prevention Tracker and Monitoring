@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+health_metrics = {
+    'Date': pd.date_range(start='2023-01-01', periods=12, freq='M'),
+    'Cholesterol': [190, 185, 180, 175, 172, 170, 168, 165, 160, 158, 156, 150]
+}
+
+df_metrics = pd.DataFrame(health_metrics)
+
+plt.plot(df_metrics['Date'], df_metrics['Cholesterol'])
+plt.title('Cholesterol Level Over Time')
+plt.xlabel('Date')
+plt.ylabel('Cholesterol Level (mg/dL)')
+plt.show()
