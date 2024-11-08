@@ -1,0 +1,1 @@
+data['BMI'] = data['weight'] / (data['height'] ** 2)
