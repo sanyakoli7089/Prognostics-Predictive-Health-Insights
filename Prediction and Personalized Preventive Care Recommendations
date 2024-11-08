@@ -1,0 +1,12 @@
+def get_preventive_care_recommendation(risk_level):
+    if risk_level == 'high':
+        return "Schedule a health checkup and follow a balanced diet and exercise plan."
+    elif risk_level == 'medium':
+        return "Maintain a healthy lifestyle and monitor your health metrics regularly."
+    else:
+        return "Keep up with regular physical activity and balanced nutrition."
+
+user_data = pd.DataFrame([[45, 1, 25.5, 120, 80]], columns=X.columns)
+user_risk = model.predict(user_data)[0]
+recommendation = get_preventive_care_recommendation(user_risk)
+print("Recommendation:", recommendation)
